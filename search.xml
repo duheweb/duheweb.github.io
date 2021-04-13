@@ -3,11 +3,14 @@
   <entry>
     <title>我的测试文章</title>
     <url>/post/%E6%88%91%E7%9A%84%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0.html</url>
-    <content><![CDATA[<h1 id="标题一"><a href="#标题一" class="headerlink" title="标题一"></a>标题一</h1><p>正文一</p>
+    <content><![CDATA[<h1 id="标题1"><a href="#标题1" class="headerlink" title="标题1"></a>标题1</h1><p>正文一</p>
 <span id="more"></span>
 <h2 id="标题二"><a href="#标题二" class="headerlink" title="标题二"></a>标题二</h2><p>正文二</p>
 <h3 id="标题三"><a href="#标题三" class="headerlink" title="标题三"></a>标题三</h3><p>正文三</p>
-<h4 id="标题四"><a href="#标题四" class="headerlink" title="标题四"></a>标题四</h4><p>正文四五六</p>
+<h4 id="标题四"><a href="#标题四" class="headerlink" title="标题四"></a>标题四</h4><p>正文四</p>
+<h1 id="标题2"><a href="#标题2" class="headerlink" title="标题2"></a>标题2</h1><p>正文五</p>
+<h2 id="标题2-1"><a href="#标题2-1" class="headerlink" title="标题2.1"></a>标题2.1</h2><p>正文六</p>
+<h1 id="标题3"><a href="#标题3" class="headerlink" title="标题3"></a>标题3</h1><p>正文七</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
