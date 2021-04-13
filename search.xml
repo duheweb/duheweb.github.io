@@ -19,6 +19,21 @@
 ]]></content>
   </entry>
   <entry>
+    <title>测试博文</title>
+    <url>/post/test-post.html</url>
+    <content><![CDATA[<h1 id="标题一"><a href="#标题一" class="headerlink" title="标题一"></a>标题一</h1><p>正文一</p>
+<h2 id="标题二"><a href="#标题二" class="headerlink" title="标题二"></a>标题二</h2><p>正文二</p>
+]]></content>
+      <categories>
+        <category>测试</category>
+        <category>语法</category>
+      </categories>
+      <tags>
+        <tag>标签1</tag>
+        <tag>标签3</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我的测试文章</title>
     <url>/post/%E6%88%91%E7%9A%84%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0.html</url>
     <content><![CDATA[<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。<span id="more"></span></p>
@@ -80,21 +95,6 @@
       <tags>
         <tag>标签1</tag>
         <tag>标签2</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>测试博文</title>
-    <url>/post/test-post.html</url>
-    <content><![CDATA[<h1 id="标题一"><a href="#标题一" class="headerlink" title="标题一"></a>标题一</h1><p>正文一</p>
-<h2 id="标题二"><a href="#标题二" class="headerlink" title="标题二"></a>标题二</h2><p>正文二</p>
-]]></content>
-      <categories>
-        <category>测试</category>
-        <category>语法</category>
-      </categories>
-      <tags>
-        <tag>标签1</tag>
-        <tag>标签3</tag>
       </tags>
   </entry>
 </search>
