@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>我的测试文章</title>
-    <url>/post/%E6%88%91%E7%9A%84%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0.html</url>
-    <content><![CDATA[<h1 id="标题1"><a href="#标题1" class="headerlink" title="标题1"></a>标题1</h1><p>正文一</p>
-<span id="more"></span>
-<h2 id="标题二"><a href="#标题二" class="headerlink" title="标题二"></a>标题二</h2><p>正文二</p>
-<h3 id="标题三"><a href="#标题三" class="headerlink" title="标题三"></a>标题三</h3><p>正文三</p>
-<h4 id="标题四"><a href="#标题四" class="headerlink" title="标题四"></a>标题四</h4><p>正文四</p>
-<h1 id="标题2"><a href="#标题2" class="headerlink" title="标题2"></a>标题2</h1><p>正文五</p>
-<h2 id="标题2-1"><a href="#标题2-1" class="headerlink" title="标题2.1"></a>标题2.1</h2><p>正文六</p>
-<h1 id="标题3"><a href="#标题3" class="headerlink" title="标题3"></a>标题3</h1><p>正文七</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-]]></content>
-      <categories>
-        <category>测试</category>
-        <category>语法</category>
-      </categories>
-      <tags>
-        <tag>标签1</tag>
-        <tag>标签2</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/post/hello-world.html</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -55,6 +31,70 @@
       <tags>
         <tag>标签1</tag>
         <tag>标签3</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的测试文章</title>
+    <url>/post/%E6%88%91%E7%9A%84%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0.html</url>
+    <content><![CDATA[<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。<span id="more"></span></p>
+<h1 id="标题1"><a href="#标题1" class="headerlink" title="标题1"></a>标题1</h1><p>正文一<br>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<h2 id="标题二"><a href="#标题二" class="headerlink" title="标题二"></a>标题二</h2><p>正文二</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<h3 id="标题三"><a href="#标题三" class="headerlink" title="标题三"></a>标题三</h3><p>正文三</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<h4 id="标题四"><a href="#标题四" class="headerlink" title="标题四"></a>标题四</h4><p>正文四</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<h1 id="标题2"><a href="#标题2" class="headerlink" title="标题2"></a>标题2</h1><p>正文五</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<h2 id="标题2-1"><a href="#标题2-1" class="headerlink" title="标题2.1"></a>标题2.1</h2><p>正文六</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<h1 id="标题3"><a href="#标题3" class="headerlink" title="标题3"></a>标题3</h1><p>正文七</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+]]></content>
+      <categories>
+        <category>测试</category>
+        <category>语法</category>
+      </categories>
+      <tags>
+        <tag>标签1</tag>
+        <tag>标签2</tag>
       </tags>
   </entry>
 </search>
