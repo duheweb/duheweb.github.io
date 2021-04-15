@@ -1,100 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/post/hello-world.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>Hexo永久链接（Permalinks）生成方式比较</title>
+    <url>/post/20210414222449.html</url>
+    <content><![CDATA[<p>先说结论，Hexo生成永久链接（Permalinks）的最佳方式是在站点配置文件_config.yml中进行如下设置：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">permalink: :layout&#x2F;:year:month:day:hour:minute:second.html</span><br><span class="line">permalink_defaults:</span><br><span class="line">pretty_urls:</span><br><span class="line">  trailing_index: false # Set to false to remove trailing &#39;index.html&#39; from permalinks</span><br><span class="line">  trailing_html: false # Set to false to remove trailing &#39;.html&#39; from permalinks</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>Hexo生成博客文章URL链接时，默认是:year/:month/:day/:title/这样的格式。如果博客文件名有中文的话，URL链接就会包含中文，复制URL路径把它粘贴到其他地方就会把中文变成一大堆乱码，使用不便而且会影响网站的SEO，同时链接层级太多也将影响SEO。</p>
+<p>URL构成越简单越好。百度建议URL不要超过255字节。一个英文字符1字节，一个中文字符2字节。</p>
+<p><strong>第一种方法</strong></p>
+<p>最容易想到的方法，把URL设置成如下格式</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">permalink: :layout&#x2F;:title.html</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>我的测试文章</title>
-    <url>/post/%E6%88%91%E7%9A%84%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0.html</url>
-    <content><![CDATA[<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。<span id="more"></span></p>
-<h1 id="标题1"><a href="#标题1" class="headerlink" title="标题1"></a>标题1</h1><p>正文一<br>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<h2 id="标题二"><a href="#标题二" class="headerlink" title="标题二"></a>标题二</h2><p>正文二</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<h3 id="标题三"><a href="#标题三" class="headerlink" title="标题三"></a>标题三</h3><p>正文三</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<h4 id="标题四"><a href="#标题四" class="headerlink" title="标题四"></a>标题四</h4><p>正文四</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<h1 id="标题2"><a href="#标题2" class="headerlink" title="标题2"></a>标题2</h1><p>正文五</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<h2 id="标题2-1"><a href="#标题2-1" class="headerlink" title="标题2.1"></a>标题2.1</h2><p>正文六</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<h1 id="标题3"><a href="#标题3" class="headerlink" title="标题3"></a>标题3</h1><p>正文七</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<p>是这样考虑的，因为 tags 和 categories 并不是 Hexo 内建支持的，所以在主题内只能根据是否在 menu 中开启了 tags/categories 页面来判断是否需要加链接。<br>如果 menu 中没有启用 tags/categories，这时候的链接可能是无效的，侧栏的展示就变成纯粹的数据统计展示。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p><code>:layout</code>为布局，<code>:title</code>为文件名，如果有篇名为《test-post》的文章其链接将会是这样</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;www.duheweb.com&#x2F;post&#x2F;test-post.html</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-]]></content>
-      <categories>
-        <category>测试</category>
-        <category>语法</category>
-      </categories>
-      <tags>
-        <tag>标签1</tag>
-        <tag>标签2</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>测试博文</title>
-    <url>/post/test-post.html</url>
-    <content><![CDATA[<h1 id="标题一"><a href="#标题一" class="headerlink" title="标题一"></a>标题一</h1><p>正文一1</p>
-<h2 id="标题二"><a href="#标题二" class="headerlink" title="标题二"></a>标题二</h2><p>正文二</p>
+<p>这种方法有3个缺陷：</p>
+<ol>
+<li><p>文章名必须为中文，这对中文博主来说很不友好，后期面对一堆全是英文名的md文件特别令人头疼。</p>
+</li>
+<li><p>不能改文件名，文件名一变，URL也会变化。</p>
+</li>
+<li><p>文件名不能起太长，否则会影响SEO，同时太长的文件名使得URL也不美观。文件名短的话其含义就会与文章标题有较大偏差，给后期维护造成混乱。</p>
+</li>
+</ol>
+<p><strong>第二种方法</strong></p>
+<p>如果你之前有搜索过的话，可以发现这种方法有很多人推荐</p>
+<p>安装hexo-abbrlink插件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+
+<p>站点配置文件_config.yml设置成这样</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">permalink: posts&#x2F;:abbrlink.html  # 此处可以自己设置，也可以直接使用 :&#x2F;abbrlink</span><br><span class="line">abbrlink:</span><br><span class="line">    alg: crc32   #算法： crc16(default) and crc32</span><br><span class="line">    rep: dex     #进制： dec(default) and hex</span><br></pre></td></tr></table></figure>
+
+<p>生成的链接像这样</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;www.duheweb.com&#x2F;posts&#x2F;1690090958.html</span><br></pre></td></tr></table></figure>
+
+<p>这种方法也有缺陷：</p>
+<p>重新生成的URL可能与之前不一样，喜欢双备份的人用此插件容易混淆URL。因为这种方法执行<code>hexo generate</code>才会在博客md文件的Front-matter 内增加<code>abbrlink</code>字段，这个字段就是URL的末尾。如果一篇博客耗时几天写了多个版本（V1和V2）才写完，在此期间没有执行过<code>hexo generate</code>，部署V2版本一段时间后才觉得V1版本更好，但此时V1是没有<code>abbrlink</code>字段，还得把V2的<code>abbrlink</code>复制到V2中。如果不复制，让插件再自动生成URL的话，新生成的URL可能会与以前不一样。因为即使abbrlink插件使用crc32算法生成<code>abbrlink</code>，也有重复的可能，遇到重复的情况插件会把<code>abbrlink</code>加1。那么问题来了，也许生成V2的<code>abbrlink</code>时没有加1，生成V1时却加1了，前后两个版本的URL就会不一样。</p>
+<p>解释的可能有点绕，总之记住，用该插件重新生成一篇文章的URL可能与之前不一样，而实际使用中我们难免会有重新生成URL的需求。</p>
+<p><strong>第三种方法</strong></p>
+<p>hexo-abbrlink的作者开发出了<a href="https://github.com/rozbo/hexo-abbrlink2">hexo-abbrlink2</a>插件，这个插件可以使URL从指定数字开始递增，像这样：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;www.duheweb.com&#x2F;posts&#x2F;1.html</span><br><span class="line">https:&#x2F;&#x2F;www.duheweb.com&#x2F;posts&#x2F;2.html</span><br><span class="line">https:&#x2F;&#x2F;www.duheweb.com&#x2F;posts&#x2F;3.html</span><br></pre></td></tr></table></figure>
+
+<p>这个方法同样也有缺陷：</p>
+<ol>
+<li><p>同时生成多篇文章的URL时会重复，这是插件自身的bug。</p>
+</li>
+<li><p>与hexo-abbrlink存在同样的问题，重新生成的URL可能与之前不一样。</p>
+</li>
+</ol>
+<p><strong>第四种方法</strong></p>
+<p>hexo-abbrlink和hexo-abbrlink2插件出现此缺陷的原因是，他们不是在创建md文件时就生成URL（即生成<code>abbrlink</code>字段），如果我们能在执行<code>hexo new</code>就生成URL，这个问题企不是就解决了。</p>
+<p>查阅<a href="https://hexo.io/zh-cn/docs/permalinks">Hexo的官方文档</a>，发现还真可以，方法如下：</p>
+<p>站点配置文件_config.yml设置成</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">permalink: :layout&#x2F;:hash.html</span><br></pre></td></tr></table></figure>
+
+<p><code>:hash</code>会根据文件名及date生成的URL，date就是文章md文件Front-matter 内的字段。生成的URL像这样</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;www.duheweb.com&#x2F;post&#x2F;3b48da9a3b8b.html</span><br></pre></td></tr></table></figure>
+
+<p>似乎很完美的解决了方法二、三的缺陷，因为date是创建md文件时就生成的，URL也很简短。</p>
+<p>但它同样有问题，部署后不能再更改文件名。这对博主也是个较大的限制，谁也不能保证发表前取的文件名能一直符合心意，后期稍不留神就把文件名改了，然后URL也随之变化。</p>
+<p><strong>第五种方法</strong></p>
+<p><code>:hash</code>方法提醒了我们，date字段是生成URL的优良种子，我们何不用date直接生成URL呢。想到就做，把站点配置文件_config.yml设置成</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">permalink: :layout&#x2F;:date.html</span><br></pre></td></tr></table></figure>
+
+<p>然后执行<code>hexo generate</code>，发现会报错，因为date形如“2021-04-12 13:15:54”，中间有空格。不过这很好解决，参考Hexo的官方文档，设置成这样就可以了</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">permalink: :layout&#x2F;:year:month:day:hour:minute:second.html</span><br></pre></td></tr></table></figure>
+
+<p>生成的URL如</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;www.duheweb.com&#x2F;post&#x2F;20210412131554.html</span><br></pre></td></tr></table></figure>
+
+<p>再把站点配置文件中的pretty_urls设置成这样</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pretty_urls:</span><br><span class="line">  trailing_index: false # Set to false to remove trailing &#39;index.html&#39; from permalinks</span><br><span class="line">  trailing_html: false # Set to false to remove trailing &#39;.html&#39; from permalinks</span><br></pre></td></tr></table></figure>
+
+<p>链接变成了</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;www.duheweb.com&#x2F;post&#x2F;20210412131554</span><br></pre></td></tr></table></figure>
+
+<p>去掉URL末尾的.html，使其简洁。当然也可以选择把它留着，二者也没什么太大的区别。</p>
+<p>不过不能直接设置成<code>permalink: :layout/:year:month:day:hour:minute:second</code>来去掉<code>.html</code>，这样在浏览器中打开该页面时会进入下载，并不会打开网页内容。</p>
 ]]></content>
       <categories>
-        <category>测试</category>
-        <category>语法</category>
+        <category>Hexo</category>
       </categories>
       <tags>
-        <tag>标签1</tag>
-        <tag>标签3</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
 </search>
