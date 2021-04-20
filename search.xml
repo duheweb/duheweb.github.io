@@ -260,7 +260,8 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
 
 <p>浏览器访问 <code>http://localhost:4000</code>，看到如下界面，表示安装成功</p>
-<p><img src="https://www.duheweb.com/img/20210419134411.png" alt="image-20210419134348614"></p>
+<img src="https://www.duheweb.com/img/20210419134411.png" alt="image-20210419134348614" style="zoom: 67%;" />
+
 <h2 id="选择-Scheme"><a href="#选择-Scheme" class="headerlink" title="选择 Scheme"></a>选择 Scheme</h2><p>更改/hexo/themes/next/下的主题配置文件_config.yml，注意其文件名与站点配置文件相同，不要混淆了</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">scheme: Pisces</span><br></pre></td></tr></table></figure>
 
@@ -487,6 +488,42 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Quicker复制Word图片原图到其他程序</title>
+    <url>/post/20210420213611.html</url>
+    <content><![CDATA[<p>经常把搜集资料的资料存在word，再整理到md文件，不过直接复制word的图片到其他程序会降低图片分辨率。必须先把word里的图片另存为到本地，然后再复制粘贴到别的应用，操作步骤比较繁琐。<br>在网上找了很久都没找到解决方法，故创建了个quicker动作，以简化此操作。</p>
+<br/>
+先看一下效果
+
+<img src="https://www.duheweb.com/img/20210420230733.gif" alt="word复制原图演示" style="zoom:50%;" />
+
+
+
+<br/>
+
+<p>下面是安装方法：</p>
+<ol>
+<li><p>下载注册安装<a href="https://getquicker.net/Download">quicker</a>。使用我的推荐码<code>132955-4177</code>，注册后首次付费购买专业版可获赠3个月（90天）使用时长。</p>
+</li>
+<li><p>到动作库复制“<a href="https://getquicker.net/Sharedaction?code=5d8583a6-cf9e-44af-796e-08d903bee990">word复制原图</a>”这个quicker动作</p>
+<p><img src="https://www.duheweb.com/img/20210420230734.png" alt="image-20210420225251793"></p>
+</li>
+<li><p>打开Quicker面板窗口（默认是鼠标中键），在空白按钮上点右键 -&gt; 粘贴分享的动作</p>
+</li>
+</ol>
+<img src="https://www.duheweb.com/img/20210420230735.png" alt="image-20210420230057069" style="zoom:50%;" />
+
+<ol start="4">
+<li>打开word，在想要复制的图片上激活Quicker面板，然后运行这个动作即可复制原图到剪贴板。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
       </tags>
   </entry>
 </search>

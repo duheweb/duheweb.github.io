@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.duheweb.com/post/20210420213611.html</loc>
+    
+    <lastmod>2021-04-20</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.duheweb.com/post/20210417143744.html</loc>
     
     <lastmod>2021-04-19</lastmod>
@@ -39,7 +46,7 @@
 
   <url>
     <loc>https://www.duheweb.com/</loc>
-    <lastmod>2021-04-19</lastmod>
+    <lastmod>2021-04-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -47,7 +54,14 @@
   
   <url>
     <loc>https://www.duheweb.com/tags/Hexo/</loc>
-    <lastmod>2021-04-19</lastmod>
+    <lastmod>2021-04-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.duheweb.com/tags/Windows/</loc>
+    <lastmod>2021-04-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -56,7 +70,14 @@
   
   <url>
     <loc>https://www.duheweb.com/categories/Hexo/</loc>
-    <lastmod>2021-04-19</lastmod>
+    <lastmod>2021-04-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.duheweb.com/categories/Windows/</loc>
+    <lastmod>2021-04-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
