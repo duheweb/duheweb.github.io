@@ -503,8 +503,7 @@
 
 <br/>
 
-<p>下面是安装方法：</p>
-<ol>
+<h1 id="安装方法"><a href="#安装方法" class="headerlink" title="安装方法"></a>安装方法</h1><ol>
 <li><p>下载注册安装<a href="https://getquicker.net/Download">quicker</a>。使用我的推荐码<code>132955-4177</code>，注册后首次付费购买专业版可获赠3个月（90天）使用时长。</p>
 </li>
 <li><p>到动作库复制“<a href="https://getquicker.net/Sharedaction?code=5d8583a6-cf9e-44af-796e-08d903bee990">word复制原图</a>”这个quicker动作</p>
@@ -518,6 +517,15 @@
 <ol start="4">
 <li>打开word，在想要复制的图片上激活Quicker面板，然后运行这个动作即可复制原图到剪贴板。</li>
 </ol>
+<p><br/><br/></p>
+<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><ul>
+<li><p>若复制出去的图片还是比原图分辨率低，可能是因为插入word时就被压缩了，在word的文件 -&gt; 选项 -&gt; 高级里勾选“不压缩文件中的图像”。</p>
+<img src="https://www.duheweb.com/img/20210421142654.png" alt="image-20210421142431810" style="zoom:50%;" /></li>
+<li><p>只在word 2016上进行了测试。</p>
+</li>
+<li><p>若有其他问题，可在本博客页面的评论框中反馈。</p>
+</li>
+</ul>
 ]]></content>
       <categories>
         <category>Windows</category>
